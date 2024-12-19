@@ -2,7 +2,8 @@ name: pylint then build
 
 on:
   pull_request:
-    - main
+    branches:
+      - main
 jobs:
   lint:
     name: Lint Code with Pylint
