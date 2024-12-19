@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello_world():  # put application's code here
+def hello_world():
     return "Hello World!"
 
 
@@ -15,6 +15,11 @@ def hello_jose():
 
 @app.route("/coop")
 def hello_coop():  # put application's code here
+    return "Hello Coop"
+
+
+@app.route("/amdrea")
+def hello_andrea():  # put application's code here
     return "Hello Coop"
 
 
