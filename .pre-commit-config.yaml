@@ -12,7 +12,8 @@ repos:
     hooks:
       - id: pylint
         args:
-        - --enable=C,R,W,E,F # Example to focus only on errors
+        - --enable=R,F # Example to focus only on errors
+        - --score=y
 
   - repo: https://github.com/psf/black
     rev: 24.10.0  # Use the latest stable version

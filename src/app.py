@@ -9,8 +9,13 @@ def hello_world():  # put application's code here
 
 
 @app.route("/jose")
-def hello_jose():  # put application's code here
+def hello_jose():
     return "Hello Jose"
+
+
+@app.route("/coop")
+def hello_coop():  # put application's code here
+    return "Hello Coop"
 
 
 if __name__ == "__main__":
