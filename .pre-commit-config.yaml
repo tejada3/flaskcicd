@@ -1,0 +1,28 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0  # Use the latest stable version
+    hooks:
+      - id: trailing-whitespace  # Removes trailing whitespace
+      - id: end-of-file-fixer    # Ensures files end with a newline
+      - id: check-added-large-files  # Warns about large files being added
+      - id: check-merge-conflict  # Checks for merge conflict markers
+
+  - repo: https://github.com/pycqa/pylint
+    rev: v3.0.0  # Use the latest stable version
+    hooks:
+      - id: pylint
+        args: [--disable=C,R,W]  # Example to focus only on errors
+
+  - repo: https://github.com/psf/black
+    rev: 23.9.1  # Use the latest stable version
+    hooks:
+      - id: black
+        args: [--line-length=88]
+
+  - repo: local
+    hooks:
+      - id: vulture
+        name: Check Unused Code with Vulture
+        entry: vulture src/
+        language: system
+        types: [python]

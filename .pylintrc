@@ -1,0 +1,4 @@
+[MESSAGES CONTROL]
+disable=all
+
+enable=E1101,E0001
