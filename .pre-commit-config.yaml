@@ -3,7 +3,6 @@ repos:
     rev: v5.0.0  # Use the latest stable version
     hooks:
       - id: trailing-whitespace  # Removes trailing whitespace
-      - id: end-of-file-fixer    # Ensures files end with a newline
       - id: check-added-large-files  # Warns about large files being added
       - id: check-merge-conflict  # Checks for merge conflict markers
 
