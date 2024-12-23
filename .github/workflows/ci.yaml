@@ -1,6 +1,7 @@
 name: pylint then build
 
 on:
+
   push:
     branches:
       - main
@@ -50,3 +51,4 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t your-image-name:latest .
+
