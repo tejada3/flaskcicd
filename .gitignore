@@ -9,3 +9,5 @@ venv/
 templates/
 
 .idea/
+
+.pytest_cache
