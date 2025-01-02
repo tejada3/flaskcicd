@@ -1,0 +1,27 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route("/")
+def hello_world():
+    return "Hello, World!"
+
+
+@app.route("/jose")
+def hello_jose():
+    return "Hello, Jose!"
+
+
+@app.route("/coop")
+def hello_coop():
+    return "Hello, Coop!"
+
+
+@app.route("/andrea")
+def hello_andrea():
+    return "Hello, Andrea!"
+
+
+if __name__ == "__main__":
+    app.run()
