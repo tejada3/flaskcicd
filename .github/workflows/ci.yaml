@@ -43,7 +43,7 @@ jobs:
   docker-build:
     name: Build Docker Image
     runs-on: ubuntu-latest
-    needs: lint_and_utest # Ensure linting passes before building the Docker image
+    needs: lint_and_utests # Ensure linting passes before building the Docker image
 
     steps:
     - name: Checkout code
