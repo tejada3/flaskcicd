@@ -34,7 +34,7 @@ jobs:
       env:
         PYTHONPATH: src/
       run: |
-        pylint
+        pylint [app.py, test/tests_endpoints.py]
     - name: Run pytest
       run: |
         pytest
